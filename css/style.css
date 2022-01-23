@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e0e;
+    /*background: linear-gradient(to bottom, rgb(211, 211, 211) 0%, #aaaaaa 25%,#aaaaaa 75%, rgb(211, 211, 211) 100%);*/
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    width: 80vw;
+    height: 1000px;
+    margin: 15px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    left: (calc(1000vw - 1250px)/2);
+    top: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(255, 0, 0, 0.2);
+    border: 2px solid rgb(255, 0, 0);
+    width: 330px;
+    height: 650px;
+    margin-right: auto;
+    background-color: #272727;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar .perfil{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar .perfil img {
+    margin: 20px;
+    width: 60%;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+.sidebar .dados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sidebar .dados .dado {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.sidebar .dados .dado ion-icon {
+    font-size: 18px;
+}
+.sidebar .dados .dado p {
+    font-weight: 700;
+    margin-left: 5px;
+}
+.sidebar .dados .dado small {
+    font-size: 10px;
+    margin-left: auto;
+}
+.sidebar .dados .dado ion-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar .infos {
+
+}
+.sidebar .infos .info {
+    
+}
+
+/* LISTA DE PROJETOS */
+.projetos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 340px;
+}
+.projetos .projeto {
+    width: 429px;
+    height: 300px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: #272727;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(255, 0, 0, 0.2);
+    border: 2px solid rgb(255, 0, 0);
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.projetos .projeto img {
+    width: 100%;
+    height: 110px;
+}
+.projetos .projeto .titulo-links{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    height: 30px;
+}
+.projetos .projeto .titulo-links .titulo{
+    font-weight: 700;
+    margin-right: auto;
+    color: rgb(233, 0, 0);
+    font-size: 20px;
+    text-align: center;
+}
+.projetos .projeto .titulo-links .link{
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50px;
+    height: 18px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 1px;
+}
+.projetos .projeto .titulo-links .repo{
+    border-radius: 3px;
+    border: 1px solid rgb(255, 0, 0);
+    width: 80px;
+    height: 18px;
+    color: rgb(233, 0, 0);
+    padding-top: 1px;
+    font-size: 12px;
+    text-align: center;
+}
+.projetos .projeto .descricao {
+    padding: 10px 20px;
+    height: 100px;
+}
+.projetos .projeto .descricao p {
+    line-height: 14px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.projetos .projeto .tecs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+}
+.projetos .projeto .tecs .divisor {
+    display: inline-block;
+    height: 15px;
+    width: 1px;
+    margin: 0 5px;
+    background-color: rgba(50, 50, 50);
+}
+.projetos .projeto .tecs p {
+    font-size: 14px;
+    font-weight: 500;
+}
