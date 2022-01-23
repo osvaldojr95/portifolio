@@ -16,7 +16,7 @@ a {
 }
 
 main {
-    width: 82vw;
+    width: 88vw;
     height: 1000px;
     margin: 15px auto;
 }
@@ -106,12 +106,12 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: 335px;
+    margin-left: 380px;
 }
 .projetos .projeto {
     width: 429px;
     height: 300px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 20px;
     background-color: #272727;
     border-radius: 20px;
